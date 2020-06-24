@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Yikes, a robot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="../../index.html">Jack Deng</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="../../index.html">Home</a></li>
+							<li>
+								<a href="#">Content</a>
+								<ul>
+									<li>
+										<a href="../../index.html#work"class="scrolly">Work</a>
+										<ul>
+											<li><a href="../../index.html#work" class="scrolly">Huawei AI-IOT Co-op</a></li>
+											<li><a href="../../index.html#work" class="scrolly">Microsemi SW Co-op</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="../../index.html#projects" class="scrolly">Projects & Extras</a>
+										<ul>
+											<li><a href="#">Yikes, a robot</a></li>
+											<li><a href="../Hackathons/Hackathons.html">Hackathons</a></li>
+											<li><a href="../../underconstruction.html">ROS parking challenge</a></li>
+											<li><a href="../../underconstruction.html">UBC Baja</a></li>
+											<li><a href="../../underconstruction.html">Photography & Film</a></li>
+											<li><a href="../../underconstruction.html">Project car</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="../../index.html#contact" class="scrolly">Contact</a></li>
+							<li><a href="#" class="button primary icon solid fa-download">Resume</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Yikes, The Robot</h2>
+							<p>An autonomous robot designed and built during the summer of 2019 for ENPH253. With its claw, it is able the pick up stone on top of pillars and line follow to autonomously navigate itself.</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<a href="#" class="image feature"><img src="images/team.jpg" alt="RoboPIC" /></a>
+								<p></p>
+								<h3>Overview</h3>
+								<p> With a team of 4, we built this robot from pretty much scratch in the summer of 2019. We had 2 STM32 "Blue Pill" microcontrollers programmed using the PlatformIO extension on VSCode to control the robot.
+									The line following module is done with 4 phototransistors in front using a PID controller mechanism. The robot uses a differential drivetrain, with 6V motors on each side. 
+									The chassis was created with laser cutted hardboard with water jetted metal pieces to increase its rigidity. 
+									The tower uses a lead screw and two bearings to increase its stability. The arm uses a sleeve with a couple of rotors to operate. Most of the calibration on the robot is done with limit
+									switchs. Limit switches are also used on the bumpers to detect if we have collided with another robot and the claw to see if we have successfully picked up the stones or not. A sonar sensor
+									was used to detect how far the claw was away from the pillars.
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/IMG1.jpeg" alt="" /><p></p></span></div>
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/IMG6.jpeg" alt="" /><p></p></span></div>
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/IMG9.jpeg" alt="" /><p></p></span></div>
+									</div>
+								</div>
+
+
+								<h3>The Mechanical Design</h3>
+								<p> I was most involved with the mechanical aspects of the robot design process. A lot of iteration was underwent for the overall design of the robot, many mechanical aspects had to be changed
+									overtime to compensate with the increasing complexities of the electrical and software components. An example is the claw design. 
+									The following is the 3 main iterations of the claw design. Most of it is created using a laser cutter and a water jet cutter.
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/CLAW0.jpg" alt="" /><p>1st iteration: initial ideas</p></span></div>
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/CLAW1.jpg" alt="" /><p>4th iteration: downsizing to save weight</p></span></div>
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/CLAW2.jpg" alt="" /><p>8th iteration: further simplification</p></span></div>
+									</div>
+								</div>
+
+								<h3>The Electrical Systems</h3>
+								<p> The electrical system of the robot were modular. circuits are built for each functionality. 2 STM32 microcontrollers served as the brains of the robot, one for the tower and claw, the other for navigation. 
+									They interfacing with the various infrared sensors and collision detection sensors to make real-time decisions. These microcontrollers also control the H bridge motor circuits used for navigation. 
+									The following are some pictures of our circuits. 
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/ELEC1.jpeg" alt="" /><p>Tower and claw microcontroller with a H bridge</p></span></div>
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/ELEC2.jpeg" alt="" /><p>Navigation microcontroller and line following circuit</p></span></div>
+										<div class="col-4 col-12-xsmall"><span class="image fit"><img src="images/ELEC3.jpeg" alt="" /><p>Another H bridge with wiring</p></span></div>
+									</div>
+								</div>
+
+								<h3>The Software Controls</h3>
+								<p> The software for our robot is written with compartimentilization. Seperate classes were written for different functions. The autonomous control is written like a state machine and not sequential.
+									For line-following, we implemented and tuned PID controls. A big challenge was the communication between the two microcontrollers. 
+									To achieve this, we implemented I-squared-C between the two microcontrollers. 
+								</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-6 col-12-xsmall"><span class="image fit"><img src="images/HORI2.jpeg" alt="" /><p>Control panel on the side of the robot</p></span></div>
+										<div class="col-6 col-12-xsmall"><span class="image fit"><img src="images/HORI1.jpeg" alt="" /><p>underside of our robot</p></span></div>
+								</div>
+
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/jacdeng/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/jacdeng" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://unsplash.com/@jacdeng" class="icon solid alt fa-images"><span class="label">Unsplash</span></a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="#main" class="scrolly">Return to top</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
