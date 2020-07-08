@@ -2590,6 +2590,16 @@ input, select, textarea {
 				width: 100%;
 				padding: 0 8em 1em 8em;
 			}
+		
+		.image.featuretwo {
+			display: block;
+			width: 100%;
+		}
+
+			.image.featuretwo img{
+				width: 100%;
+				padding: 0 9em 1em 9em;
+			}
 
 		.image.fit {
 			display: block;
@@ -3839,6 +3849,13 @@ input, select, textarea {
 					padding: 0 4em 1em 4em;
 				}
 
+			.image.featuretwo{
+				display: block;
+			}
+				.image.featuretwo img{
+					width: 100%;
+					padding: 0 5em 1em 5em;
+				}	
 	}
 
 /* Small */
@@ -4163,6 +4180,14 @@ input, select, textarea {
 					width: 100%;
 					padding: 0 2em 1em 2em;
 				}
+			
+			.image.featuretwo{
+				display: block;
+			}
+				.image.featuretwo img{
+					width: 100%;
+					padding: 0 2em 1em 2em;
+				}	
 
 	}
 
